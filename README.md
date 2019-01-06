@@ -10,6 +10,7 @@
 - belongs_to :user
 
 ## usersテーブル
+
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
@@ -27,7 +28,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false,|
+|name|string|null: false|
 
 ### Association
 - has_many :group_users
