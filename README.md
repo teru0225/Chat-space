@@ -1,24 +1,52 @@
-# README
+## group_usersテーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
-Things you may want to cover:
+### Association
+- belongs_to :group
+- belongs_to :user
 
-* Ruby version
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|varchar|null: false|
+|group_id|integer||
+|password|string|null: false|
 
-* System dependencies
+### Association
+- has_many :messages
+- has_many :group_users
+- has_many :groups, through: :group_users
 
-* Configuration
 
-* Database creation
+## groupsテーブル
 
-* Database initialization
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false,|
 
-* How to run the test suite
+### Association
+- has_many :group_users
+- has_many :messages
+- has_many :users, through: :group_users
+- accepts_nested_attributes_for :group_users
+<!-- accepts_nested_attributes_forは、他のモデルを一括で更新・保存できるようにしてくれる -->
 
-* Services (job queues, cache servers, search engines, etc.)
+## messagesテーブル
 
-* Deployment instructions
+|Column|Type|Options|
+|------|----|-------|
+|body|text||
+|image|string||
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
-* ...
+
+### Association
+- belongs_to :group
+- belongs_to :user
+
