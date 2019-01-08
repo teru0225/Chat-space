@@ -16,7 +16,6 @@
 |name|string|null: false|
 |email|varchar|null: false|
 |group_id|integer||
-|password|string|null: false|
 
 ### Association
 - has_many :messages
@@ -34,8 +33,6 @@
 - has_many :group_users
 - has_many :messages
 - has_many :users, through: :group_users
-- accepts_nested_attributes_for :group_users
-<!-- accepts_nested_attributes_forは、他のモデルを一括で更新・保存できるようにしてくれる -->
 
 ## messagesテーブル
 
