@@ -1,0 +1,207 @@
+$white: white;
+$blue: #38AEF0;
+$left-header: #253141;
+$left-header2: #2f3e51;
+$left-font-color: #FFFFFF;
+$light-grey: #999999;
+$border: #eeeeee;
+$edit: #6091d3;
+$light-black: #434A54;
+$right-footer: #AAAAAA;
+
+@mixin side-padding20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin side-padding40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+div, form {
+  display: block;
+}
+
+.clearfix:after {
+clear: both;
+content: '';
+display: block;
+}
+
+.header {
+  background-color: $blue;
+  height: 28px;
+  text-align: center;
+  color: $white;
+}
+
+.leftContent {
+  width: 300px;
+  height: 100vh;
+  float: left;
+}
+
+.leftHeader {
+  @include side-padding20;
+  background-color: $left-header;
+  width: 100%;
+  height: 15%;
+  position: relative;
+  p {
+    color: $left-font-color;
+    float: left;
+    line-height: 90px;
+    font-size: 16px;
+    font-weight: bold;
+    }
+    a {
+      display: inline-block;
+      margin-right: 8px;
+      float: right;
+      line-height: 90px;
+      font-family: "Font Awesome 5 Free";
+      content: '\f1e2';
+      font-weight: 400;
+      color: white;
+      }
+}
+
+.leftHeader2 {
+  @include side-padding20;
+  background-color: $left-header2;
+  width: 100%;
+  height: calc(100vh - 15%);
+  color: $left-font-color;
+  &__group {
+    padding-top: 20px;
+    font-size: 15px;
+           }
+    &__message {
+  padding-top: 5px;
+  font-size: 11px;
+  padding-bottom: 40px;
+               }
+}
+
+.rightContent {
+  height: 100vh;
+  width: calc(100vw - 300px);
+  float: left;
+}
+
+.rightHeader {
+  height: 15%;
+  border: 1px solid $border;
+  &__group {
+    margin: 0px 40px;
+           }
+    &_group_name {
+      margin: 35px 0 15px;
+      color: #333333;
+      font-size: 20px;
+      float: left;
+                 }
+      &_group_edit {
+        color: $blue;
+        border: solid 1px $edit;
+        padding: 12.5px 20px;
+        margin: 28px 20px 0;
+        float: right;
+                   }
+        &__member {
+          font-size: 12px;
+          margin: 0 40px;
+          color: $light-grey;
+                  }
+}
+
+.rightBody {
+  @include side-padding40;
+  width: 100%;
+  height: calc(100% - 15% - 90px);
+}
+
+.rightBody2 {
+  padding-top: 26px;
+}
+
+.rightBody3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__name {
+    font-size: 16px;
+    font-weight: bold;
+    color: $light-black;
+    float: left;
+          }
+    &__date {
+      font-size: 12px;
+      color: $light-grey;
+      padding: 0 10px 10px;
+      float: left;
+            }
+      &__text {
+        font-size: 14px;
+        color: $light-black;
+        clear: both;
+              }
+}
+
+.rightFooter {
+  width: 100%;
+  height: 90px;
+  background-color: $right-footer;
+  &__form {
+    color: #434A54;
+    margin: 0 40px;
+    position: relative;
+          }
+}
+
+.message {
+  position: relative;
+  &__placeholder {
+    height: 50px;
+    width: calc( 100% - 130px );
+    padding: 15px 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    color: $light-black;
+                  }
+    &__label {
+      height: 50px;
+      width: 40px;
+      position: absolute;
+      margin: 32px 130px 20px 0;
+      top: 0;
+      right: 0;
+              }
+      &__input {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        display: none;
+               }
+        &__submit {
+          width: 100px;
+          height: 50px;
+          text-align: center;
+          color: $white;
+          background-color: $blue;
+          margin: 20px 0;
+          position: absolute;
+          top: 0;
+          right: 0;
+          border: none;
+                   }
+}
+
+.fa {
+  display: inline-block;
+  font: FontAwesome;
+}
