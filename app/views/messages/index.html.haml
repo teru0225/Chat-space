@@ -1,0 +1,35 @@
+!!!
+%html
+  %head
+  %body
+    .header
+      %p チャットグループが作成されました
+    .container
+      .leftContent
+        .leftHeader
+          %p.leftHeader__name seo
+          %a.leftHeader__settingIcon{:href => "#"} <i class="fa fa-cog" aria-hidden="true"></i>
+          %a.leftHeader__editIcon{:href => "#"} <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        .leftHeader2
+          %p.leftHeader2__group sample
+          %p.leftHeader2__message Good bye world
+      .rightContent
+        .rightHeader
+          .rightHeader__group.clearfix
+            .rightHeader_group_name sampleグループ
+            %a.rightHeader_group_edit{:href => "#"} Edit
+          .rightHeader__member MEMBER
+        .rightBody
+          .rightBody2
+            .rightBody3.clearfix
+              .rightBody3__name ryosukemaehira
+              .rightBody3__date 2016/10/02 06:27:07
+              .rightBody3__text なるほど
+        .rightFooter
+          %form.rightFooter__form{:action => "#", :method => "post", :id => "new_message", :accept-charset => "UTF-8"}
+            .message
+              %input.message__placeholder{:name => "message", :placeholder => "type a message", :type => "text", :id => "message_body"}
+              %label.message__label{:for => "message_image"}
+                %input.message__input{:name => "message[image]", :type => "file", :accept => ".jpg,.gif,.png,image/gif,image/jpeg,image/png", :id => "message_image"}/
+                %i.fa.fa-image
+            %input.message__submit{:name => "commit", :type => "submit", :value => "Send"}
