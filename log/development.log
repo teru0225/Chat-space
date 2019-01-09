@@ -835,3 +835,12 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 405ms (Views: 402.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-09 17:08:34 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_header.html.haml (3.1ms)
+  Rendered messages/_main.html.haml (6.3ms)
+  Rendered messages/index.html.haml within layouts/application (23.4ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
