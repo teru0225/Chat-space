@@ -22,52 +22,48 @@ content: '';
 display: block;
 }
 
-
-.leftContent {
+.side {
   width: 300px;
   height: 100vh;
   float: left;
-}
-
-.leftHeader {
-  @include side-padding20;
-  background-color: #253141;
-  width: 100%;
-  height: 15%;
-  position: relative;
-  p {
-    color: #FFFFFF;
-    float: left;
-    line-height: 90px;
-    font-size: 16px;
-    font-weight: bold;
-    }
-    a {
-      display: inline-block;
-      margin-right: 8px;
-      float: right;
+  &__Header {
+    @include side-padding20;
+    background-color: #253141;
+    width: 100%;
+    height: 15%;
+    position: relative;
+    &--name {
+      color: #FFFFFF;
+      float: left;
       line-height: 90px;
-      font-family: "Font Awesome 5 Free";
-      content: '\f1e2';
-      font-weight: 400;
-      color: white;
-      }
-}
-
-.leftHeader2 {
-  @include side-padding20;
-  background-color: #2f3e51;
-  width: 100%;
-  height: calc(100vh - 15%);
-  color: #FFFFFF;
-  &__group {
-    padding-top: 20px;
-    font-size: 15px;
-           }
-    &__message {
-  padding-top: 5px;
-  font-size: 11px;
-  padding-bottom: 40px;
-               }
+      font-size: 16px;
+      font-weight: bold;
+            }
+      i{
+        color: white;
+        display: inline-block;
+        margin-right: 8px;
+        float: right;
+        line-height: 90px;
+        content: '\f1e2';
+        font-weight: 400;
+                 }
+                 }
+  &__Main {
+    @include side-padding20;
+    background-color: #2f3e51;
+    width: 100%;
+    height: calc(100vh - 15%);
+    color: #FFFFFF;
+    &--group {
+      padding-top: 20px;
+      font-size: 15px;
+             }
+      &--message {
+        padding-top: 5px;
+        font-size: 11px;
+        padding-bottom: 40px;
+                 }
+  }
 }
 
