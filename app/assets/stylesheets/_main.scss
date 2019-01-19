@@ -59,6 +59,7 @@ display: block;
   @include side-padding40;
   width: 100%;
   height: calc(100% - 15% - 90px);
+  overflow-y: scroll;
 }
 
 .rightBody2 {
