@@ -3,7 +3,9 @@
     .rightHeader
       .rightHeader__group.clearfix
         .rightHeader_group_name sampleグループ
-        %a.rightHeader_group_edit{:href => "#"} Edit
+        .rightHeader_group_edit
+          = link_to() do
+            Edit
       .rightHeader__member MEMBER
     .rightBody
       .rightBody2
