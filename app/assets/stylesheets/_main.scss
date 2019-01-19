@@ -23,118 +23,110 @@ display: block;
 }
 
 
-.rightContent {
+.main {
   height: 100vh;
   width: calc(100vw - 300px);
   float: left;
-}
-
-.rightHeader {
-  height: 15%;
-  border: 1px solid #eeeeee;
-  &__group {
-    margin: 0px 40px;
+  &__Header {
+    height: 15%;
+    border: 1px solid #eeeeee;
+    &--group {
+      margin: 0px 40px;
            }
-    &_group_name {
-      margin: 35px 0 15px;
-      color: #333333;
-      font-size: 20px;
-      float: left;
-                 }
-      &_group_edit {
-        color: #38AEF0;
-        border: solid 1px #6091d3;
-        padding: 12.5px 20px;
-        margin: 28px 20px 0;
-        float: right;
+      &--group_name {
+        margin: 35px 0 15px;
+        color: #333333;
+        font-size: 20px;
+        float: left;
                    }
-        &__member {
-          font-size: 12px;
-          margin: 0 40px;
-          color: #999999;
-                  }
-}
-
-.rightBody {
-  @include side-padding40;
-  width: 100%;
-  height: calc(100% - 15% - 90px);
-  overflow-y: scroll;
-}
-
-.rightBody2 {
-  padding-top: 26px;
-}
-
-.rightBody3 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  &__name {
-    font-size: 16px;
-    font-weight: bold;
-    color: #434A54;
-    float: left;
-          }
-    &__date {
-      font-size: 12px;
-      color: #999999;
-      padding: 0 10px 10px;
-      float: left;
+        &--group_edit {
+          color: #38AEF0;
+          border: solid 1px #6091d3;
+          padding: 12.5px 20px;
+          margin: 28px 20px 0;
+          float: right;
+                     }
+          &--member {
+            font-size: 12px;
+            margin: 0 40px;
+            color: #999999;
+                    }
+  }
+  &__Body {
+    @include side-padding40;
+    width: 100%;
+    height: calc(100% - 15% - 90px);
+    overflow-y: scroll;
+    padding-top: 26px;
+    &--main {
+      padding-top: 20px;
+      padding-bottom: 20px;
             }
-      &__text {
-        font-size: 14px;
+      &--name {
+        font-size: 16px;
+        font-weight: bold;
         color: #434A54;
-        clear: both;
+        float: left;
               }
-}
-
-.rightFooter {
-  width: 100%;
-  height: 90px;
-  background-color: #AAAAAA;
-  &__form {
-    color: #434A54;
-    margin: 0 40px;
-    position: relative;
-          }
-}
-
-.message {
-  position: relative;
-  &__placeholder {
-    height: 50px;
-    width: calc( 100% - 130px );
-    padding: 15px 10px;
-    margin: 20px 0;
-    font-size: 16px;
-    color: #434A54;
+        &--date {
+          font-size: 12px;
+          color: #999999;
+          padding: 0 10px 10px;
+          float: left;
+                }
+          &--text {
+            font-size: 14px;
+            color: #434A54;
+            clear: both;
                   }
-    &__label {
-      height: 50px;
-      width: 40px;
-      position: absolute;
-      margin: 32px 130px 20px 0;
-      top: 0;
-      right: 0;
-              }
-      &__input {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        display: none;
-               }
-        &__submit {
-          width: 100px;
+}
+  &__Footer {
+    width: 100%;
+    height: 90px;
+    background-color: #AAAAAA;
+    &--form {
+      color: #434A54;
+      margin: 0 40px;
+      position: relative;
+            }
+      &--message {
+        position: relative;
+                 }
+        &--placeholder {
           height: 50px;
-          text-align: center;
-          color: white;
-          background-color: #38AEF0;
+          width: calc( 100% - 130px );
+          padding: 15px 10px;
           margin: 20px 0;
-          position: absolute;
-          top: 0;
-          right: 0;
-          border: none;
+          font-size: 16px;
+          color: #434A54;
+                       }
+          &--label {
+            height: 50px;
+            width: 40px;
+            position: absolute;
+            margin: 32px 130px 20px 0;
+            top: 0;
+            right: 0;
                    }
+            &--input {
+              position: absolute;
+              top: 15px;
+              left: 15px;
+              display: none;
+                     }
+              &--submit {
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                color: white;
+                background-color: #38AEF0;
+                margin: 20px 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: none;
+                        }
+}
 }
 
 .fa {
