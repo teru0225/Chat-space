@@ -2188,3 +2188,66 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 1699ms (Views: 1677.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-19 16:59:14 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_header.html.haml (2.2ms)
+  Rendered messages/_main.html.haml (5.7ms)
+  Rendered messages/index.html.haml within layouts/application (17.8ms)
+Completed 200 OK in 1104ms (Views: 1101.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-19 16:59:19 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_header.html.haml (1.3ms)
+  Rendered messages/_main.html.haml (16.7ms)
+  Rendered messages/index.html.haml within layouts/application (26.5ms)
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-19 16:59:21 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_header.html.haml (1.5ms)
+  Rendered messages/_main.html.haml (9.2ms)
+  Rendered messages/index.html.haml within layouts/application (23.2ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-19 16:59:22 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_header.html.haml (2.3ms)
+  Rendered messages/_main.html.haml (6.5ms)
+  Rendered messages/index.html.haml within layouts/application (17.4ms)
+Completed 200 OK in 47ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-19 16:59:23 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_header.html.haml (2.7ms)
+  Rendered messages/_main.html.haml (7.3ms)
+  Rendered messages/index.html.haml within layouts/application (24.6ms)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-19 16:59:24 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_header.html.haml (2.3ms)
+  Rendered messages/_main.html.haml (10.2ms)
+  Rendered messages/index.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-19 16:59:28 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_header.html.haml (1.2ms)
+  Rendered messages/_main.html.haml (7.5ms)
+  Rendered messages/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
