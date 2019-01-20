@@ -1,0 +1,22 @@
+.main
+  .main__Header
+    .main__Header--group.clearfix
+      .main__Header--group_name sampleグループ
+      .main__Header--group_edit
+        = link_to() do
+          Edit
+    .main__Header--member MEMBER
+  .main__Body
+    .main__Body--main.clearfix
+      .main__Body--name ryosukemaehira
+      .main__Body--date 2016/10/02 06:27:07
+      .main__Body--text なるほど
+  .main__Footer
+    %form.main__Footer--form{:action => "#", :method => "post", :id => "new_message", :accept-charset => "UTF-8"}
+      .main__Footer--message
+        %input.main__Footer--placeholder{:name => "message", :placeholder => "type a message", :type => "text", :id => "message_body"}
+        %label.main__Footer--label{:for => "message_image"}
+          %input.main__Footer--input{:name => "message[image]", :type => "file", :accept => ".jpg,.gif,.png,image/gif,image/jpeg,image/png", :id => "message_image"}/
+          %i.fa.fa-image
+      %input.main__Footer--submit{:name => "commit", :type => "submit", :value => "Send"}
+

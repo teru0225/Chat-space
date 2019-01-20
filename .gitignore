@@ -1,1 +1,4 @@
 public/uploads/*
+tmp/*
+log/development.log
+

@@ -15,7 +15,6 @@
 |------|----|-------|
 |name|string|null: false|
 |email|varchar|null: false|
-|group_id|integer||
 
 ### Association
 - has_many :messages
