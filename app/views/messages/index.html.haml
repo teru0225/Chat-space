@@ -11,7 +11,11 @@
       = link_to new_group_path, class: "icon" do
         %i.fa.fa-pencil-square-o
   .side__Main
-    %p.side__Main--group sample
-    %p.side__Main--message Good bye world
+    - current_user.groups.each do |group|
+      = link_to group_messages_path do
+        .side__Main--group
+          = group.name
+        .side__Main--message
+          Good bye world
 
 =render partial:"main"
