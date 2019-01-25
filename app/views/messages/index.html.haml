@@ -12,7 +12,7 @@
         %i.fa.fa-pencil-square-o
   .side__Main
     - current_user.groups.each do |group|
-      = link_to group_messages_path do
+      = link_to group_messages_path(group) do
         .side__Main--group
           = group.name
         .side__Main--message
