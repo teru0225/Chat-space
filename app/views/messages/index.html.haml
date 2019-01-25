@@ -2,9 +2,10 @@
 
 .side
   .side__Header
-    %p.side__Header--name seo
+    %p.side__Header--name
+      = current_user.name
     .side__Header--setting
-      = link_to() do
+      = link_to edit_user_path(current_user), class: "icon" do
         %i.fa.fa-cog
     .side__Header--edit
       = link_to() do
