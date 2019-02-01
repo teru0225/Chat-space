@@ -1,0 +1,10 @@
+.main__Body--main.clearfix
+  .main__Body--name
+    = message.user.name
+  .main__Body--date
+    = message.created_at.strftime("%Y/%m/%d %H:%M")
+.main__Body--text
+  - if message.body.present?
+    %p.main__Body--content
+      = message.body
+  = image_tag message.image_url, class: 'main__Body--image' if message.image.present?
