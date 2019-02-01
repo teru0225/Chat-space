@@ -8,10 +8,7 @@
           Edit
     .main__Header--member MEMBER
   .main__Body
-    .main__Body--main.clearfix
-      .main__Body--name ryosukemaehira
-      .main__Body--date 2016/10/02 06:27:07
-      .main__Body--text なるほど
+    = render @messages
   .main__Footer
     = form_for [@group, @message] do |f|
       = f.text_field :body, class: 'main__Footer--placeholder', placeholder: 'type a message'
