@@ -1,4 +1,4 @@
 public/uploads/*
 tmp/*
 log/development.log
-
+log/test.log
