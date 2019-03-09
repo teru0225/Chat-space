@@ -14,7 +14,7 @@
     = render @messages
   .main__Footer
     = form_for [@group, @message] do |f|
-      = f.text_field :body, class: 'main__Footer--placeholder', placeholder: 'type a message'
+      = f.text_field :body, class: 'main__Footer--placeholder', id:'new_message', placeholder: 'type a message'
       .main__Footer--message
         = f.label :image, class: 'main__Footer--label' do
           = fa_icon 'picture-o', class: 'main__Footer--input'
