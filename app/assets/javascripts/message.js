@@ -1,5 +1,5 @@
 $(function() {
-  function buildHTML(message){
+  function buildSendMessageHTML(message){
     var image = message.image == null ? "" : `<img src="${message.image}" class="main__Body--image">`
     var html = `<div class="main__Body--main clearfix">
                   <div class="main__Body--name">
@@ -31,8 +31,8 @@ $(function() {
       contentType: false
     })
 
-    .done(function(data) {
-      var html = buildHTML(data);
+    .done(function(Messagedata) {
+      var html = buildSendMessageHTML(Messagedata);
       $('.main__Body').append(html);
       $('.main__Footer--submit').prop( "disabled", false );
 
