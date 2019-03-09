@@ -31,8 +31,8 @@ $(function() {
       contentType: false
     })
 
-    .done(function(Messagedata) {
-      var html = buildSendMessageHTML(Messagedata);
+    .done(function(message) {
+      var html = buildSendMessageHTML(message);
       $('.main__Body').append(html);
       $('.main__Footer--submit').prop( "disabled", false );
 
